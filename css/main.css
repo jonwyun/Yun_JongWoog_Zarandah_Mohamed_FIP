@@ -1,16 +1,16 @@
 /* 
-Index
+    CSS Guide 
 
     1. General Styles
-    2. Grid
-    3. Header
-    4. Main Hero Image
-    5. 
-    6. 
-    7. Contact Us
-    8. Footer
+    2. Main Nav
+    3. Main Hero Image
+    4. Product
+    5. Brand Story
+    6. Contact Us
+    7. Footer
+    8. Media Query
 
-*/
+ */
 
 /* 1. General Styles */
 
@@ -19,13 +19,306 @@ Index
 }
 
 body {
-    /* font-family: 'Sanchez', 'Times New Roman', serif;
-    font-weight: normal;
-    font-size: 16px; */
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Noto Serif', serif; */
 }
 
-.container {
-    width: 1200px;
+a {
+  text-decoration: none;
+  transition: all .5s ease-in-out;
 }
 
-/* 2. Grid */
+input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Main Nav */
+
+#main-nav button {
+    background: url(../images/hamburger.svg) center no-repeat;
+    border: 0;
+    width: 25px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+ 
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 80px;
+}
+ 
+#main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    transition: all 0.3s ease;
+}
+ 
+#main-nav ul li a:hover {
+    color: #517d59;
+}
+ 
+#main-nav ul li {
+    margin-bottom: 20px;
+}
+
+#burger-con {
+    display: none;
+}
+ 
+#burger-con.slide-toggle {
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background: #626262;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+ 
+#main-nav button.expanded {
+    background: url(../images/hamburger-white.svg) center no-repeat;
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 3;
+}
+
+#main-logo {
+    text-align: center;
+}
+
+#main-logo img {
+    height: 60px;
+    margin-top: 25px;
+}
+
+#main-search {
+    text-align: right;
+}
+
+#main-search {
+    height: 30px;
+    margin-top: 30px;
+}
+
+#social {
+    display: none;
+}
+
+/* 3. Main Hero Image */
+
+
+
+/* 4. Product */
+
+#products {
+    margin-top: 20px;
+}
+
+.carousel {
+    grid-column: 1/-1;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel-control {
+    background: #ffffff;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .prev {
+    left: 10%;
+  }
+  
+  .next {
+    right: 10%;
+    justify-self: right;
+  }
+  
+  .product-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+  .product-text span {
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+    color: #626262;
+  }
+  
+
+/* 5. Brand Story */
+
+#brand {
+    background-color: #E2E0E0;
+    margin-top: 35px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#brand-movie {
+    height: 244px;
+}
+
+@media screen and (min-width: 768px) {
+    #brand-movie {
+        height: 546px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #brand-movie {
+        height: 428px;
+    }
+}
+
+#brand-text {
+    height: 337px;
+    border: solid 1px black;
+    background-color: #fff;
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    #brand-text {
+        height: 428px;
+    }
+}
+
+/* 6. Contact Us */
+
+#contact-us-text {
+    height: 337px;
+    border: solid 1px black;
+    background-color: #fff;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* 7. footer */
+
+footer {
+    background-color: #E2E0E0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* 7. Tablet Screen */
+
+@media screen and (min-width: 768px) {
+    #brand-movie {
+        height: 546px;
+    }
+
+    #social {
+        display: none;
+    }
+}
+
+/* 8. Desktop Screen */
+
+@media screen and (min-width: 1200px) {
+    
+    #main-logo {
+        order: -1;
+        text-align: left;
+    }
+
+    #button {
+        display: none;
+    }
+
+    #burger-con {
+        display: flex;
+    }
+
+    #burger-con ul {
+        display: flex;
+        margin-top: 35px;
+    }
+
+    #burger-con ul li {
+        display: inline;
+        margin-bottom: none;
+        padding-bottom: none;
+    }
+
+    #burger-con ul li a {
+        display: inline;
+        color: #000000;
+        font-size: 18px;
+        font-weight: bolder;
+        margin-right: 81px;
+        transition: all 0.3s ease;
+    }
+
+    #burger-con ul li a:hover {
+        border-bottom: solid 1px #517d59;
+        color: #517d59;
+    }
+
+    #main-search {
+        text-align: left;
+        margin-top: 30px;  
+    }
+
+    #social {
+        margin-top: 15px;
+        margin-bottom: 15px; 
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+        border-left: solid 2px;   
+    }
+      
+    #social img {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+
+    }
+}
