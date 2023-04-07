@@ -6,6 +6,8 @@ let burgerCon = document.querySelector("#burger-con");
 function burgerMenu() {
     burgerCon.classList.toggle("slide-toggle");
     button.classList.toggle("expanded");
+    const carousel = document.querySelector('.carousel');
+    carousel.classList.toggle("hidden");
 };
 
 button.addEventListener("click", burgerMenu, false);

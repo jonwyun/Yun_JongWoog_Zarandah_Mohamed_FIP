@@ -7,7 +7,7 @@ Quatro was a canned, fruit-flavoured carbonated drink produced from 1982 to 1989
 The current incarnation of the Quatro brand has been sold and marketed in South America by The Coca-Cola Company, since 1996. It is grapefruit-flavoured, and is sold in Argentina, Chile, Colombia and Uruguay.
 
 ## Credit
-Jong Woog Yun
+Jong Woog Yun, 
 Mohamed Zarandah
 
 ## License
