@@ -4,14 +4,210 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Quatro!</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
+    <title>.:: Quatro ::.</title>
 </head>
 <body>
-    
+    <h1 class="hidden">Welcome to New Quatro!</h1>
+    <header class="grid-con" id="main-header">
+        <h2 class="hidden">Top Navigation</h2>
+        <nav class="col-span-1 m-col-span-1 l-col-start-4 l-col-end-10" id="main-nav">
+            <h3 class="hidden">Main Navigation</h3>
+            <button id="button"></button>
+            <div id="burger-con">
+                <ul>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Brand Story</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-start-2 col-end-4 m-col-start-4 m-col-end-6 l-col-span-3" id="main-logo">
+            <a href="index.html">
+                <img src="images/logo-apple_v1.svg" alt="logo">
+            </a>
+        </div>
+        <div class="col-span-1 m-col-start-8 m-col-end-9 l-col-span-1" id="main-search">
+            <img src="images/search.svg" alt="search">
+        </div>
+        <section class="l-col-start-11 l-col-end-13" id="social">
+            <h3 class="hidden">Social Links</h3>
+            <img src="images/facebook.svg" alt="facebook">
+            <img src="images/instagram.svg" alt="instageam">
+            <img src="images/twitter.svg" alt="twitter">
+        </section>
+    </header>
+
+    <main>
+        <section class="col-auto" id="hero-con">
+            <h2 class="hidden">Hero Image</h2>
+            <img
+                sizes="(max-width: 2400px) 100vw, 2400px"
+                srcset="
+                images/Quatro_all_z9bu7w_c_scale,w_200.jpg 200w,
+                images/Quatro_all_z9bu7w_c_scale,w_583.jpg 583w,
+                images/Quatro_all_z9bu7w_c_scale,w_813.jpg 813w,
+                images/Quatro_all_z9bu7w_c_scale,w_1016.jpg 1016w,
+                images/Quatro_all_z9bu7w_c_scale,w_1180.jpg 1180w,
+                images/Quatro_all_z9bu7w_c_scale,w_1370.jpg 1370w,
+                images/Quatro_all_z9bu7w_c_scale,w_1525.jpg 1525w,
+                images/Quatro_all_z9bu7w_c_scale,w_1667.jpg 1667w,
+                images/Quatro_all_z9bu7w_c_scale,w_1814.jpg 1814w,
+                images/Quatro_all_z9bu7w_c_scale,w_1954.jpg 1954w,
+                images/Quatro_all_z9bu7w_c_scale,w_2101.jpg 2101w,
+                images/Quatro_all_z9bu7w_c_scale,w_2317.jpg 2317w,
+                images/Quatro_all_z9bu7w_c_scale,w_2372.jpg 2372w,
+                images/Quatro_all_z9bu7w_c_scale,w_2400.jpg 2400w"
+                src="images/Quatro_all_z9bu7w_c_scale,w_2400.jpg"
+                alt="hero image">
+        </section>
+        <section class="grid-con" id="products">
+            <h2 class="hidden">Products</h2>
+            <div class="carousel">
+                <div class="carousel-items">
+                    <div class="carousel-item">
+                        <button class="carousel-control prev col-span-1">&#10094;</button>
+                        <div class="product-box">
+                            <img
+                                sizes="(max-width: 2400px) 100vw, 2400px"
+                                srcset="
+                                images/Quatro_apple_puivuo_c_scale,w_200.jpg 200w,
+                                images/Quatro_apple_puivuo_c_scale,w_626.jpg 626w,
+                                images/Quatro_apple_puivuo_c_scale,w_939.jpg 939w,
+                                images/Quatro_apple_puivuo_c_scale,w_1136.jpg 1136w,
+                                images/Quatro_apple_puivuo_c_scale,w_1379.jpg 1379w,
+                                images/Quatro_apple_puivuo_c_scale,w_1389.jpg 1389w,
+                                images/Quatro_apple_puivuo_c_scale,w_1516.jpg 1516w,
+                                images/Quatro_apple_puivuo_c_scale,w_1657.jpg 1657w,
+                                images/Quatro_apple_puivuo_c_scale,w_1808.jpg 1808w,
+                                images/Quatro_apple_puivuo_c_scale,w_1953.jpg 1953w,
+                                images/Quatro_apple_puivuo_c_scale,w_2085.jpg 2085w,
+                                images/Quatro_apple_puivuo_c_scale,w_2219.jpg 2219w,
+                                images/Quatro_apple_puivuo_c_scale,w_2348.jpg 2348w,
+                                images/Quatro_apple_puivuo_c_scale,w_2400.jpg 2400w"
+                                src="images/Quatro_apple_puivuo_c_scale,w_2400.jpg"
+                                alt="">
+                        </div>
+                        <div class="product-text">Quatro Apple <span>of Nature</span></div>
+                        <button class="carousel-control next col-start-4 col-end-5 m-col-start-8 m-col-end-9 l-col-start-12 l-col-end-13">&#10095;</button>
+                    </div>
+                    <div class="carousel-item">
+                        <button class="carousel-control prev col-span-1">&#10094;</button>
+                        <div class="product-box">
+                            <img
+                                sizes="(max-width: 2400px) 100vw, 2400px"
+                                srcset="
+                                images/Quatro_lime_asl5w5_c_scale,w_200.jpg 200w,
+                                images/Quatro_lime_asl5w5_c_scale,w_520.jpg 520w,
+                                images/Quatro_lime_asl5w5_c_scale,w_770.jpg 770w,
+                                images/Quatro_lime_asl5w5_c_scale,w_945.jpg 945w,
+                                images/Quatro_lime_asl5w5_c_scale,w_1092.jpg 1092w,
+                                images/Quatro_lime_asl5w5_c_scale,w_1263.jpg 1263w,
+                                images/Quatro_lime_asl5w5_c_scale,w_1422.jpg 1422w,
+                                images/Quatro_lime_asl5w5_c_scale,w_1642.jpg 1642w,
+                                images/Quatro_lime_asl5w5_c_scale,w_1838.jpg 1838w,
+                                images/Quatro_lime_asl5w5_c_scale,w_1979.jpg 1979w,
+                                images/Quatro_lime_asl5w5_c_scale,w_2114.jpg 2114w,
+                                images/Quatro_lime_asl5w5_c_scale,w_2252.jpg 2252w,
+                                images/Quatro_lime_asl5w5_c_scale,w_2384.jpg 2384w,
+                                images/Quatro_lime_asl5w5_c_scale,w_2400.jpg 2400w"
+                                src="images/Quatro_lime_asl5w5_c_scale,w_2400.jpg"
+                                alt="">
+                        </div>
+                        <div class="product-text">Quatro Lime <span>of Nature</span></div>
+                        <button class="carousel-control next col-start-4 col-end-5 m-col-start-8 m-col-end-9 l-col-start-12 l-col-end-13">&#10095;</button>
+                    </div>
+                    <div class="carousel-item">
+                        <button class="carousel-control prev col-span-1">&#10094;</button>
+                        <div class="product-box">
+                            <img
+                                sizes="(max-width: 2400px) 100vw, 2400px"
+                                srcset="
+                                images/Quatro_orange_rkddje_c_scale,w_200.jpg 200w,
+                                images/Quatro_orange_rkddje_c_scale,w_609.jpg 609w,
+                                images/Quatro_orange_rkddje_c_scale,w_879.jpg 879w,
+                                images/Quatro_orange_rkddje_c_scale,w_1072.jpg 1072w,
+                                images/Quatro_orange_rkddje_c_scale,w_1231.jpg 1231w,
+                                images/Quatro_orange_rkddje_c_scale,w_1395.jpg 1395w,
+                                images/Quatro_orange_rkddje_c_scale,w_1530.jpg 1530w,
+                                images/Quatro_orange_rkddje_c_scale,w_1760.jpg 1760w,
+                                images/Quatro_orange_rkddje_c_scale,w_1740.jpg 1740w,
+                                images/Quatro_orange_rkddje_c_scale,w_2185.jpg 2185w,
+                                images/Quatro_orange_rkddje_c_scale,w_2248.jpg 2248w,
+                                images/Quatro_orange_rkddje_c_scale,w_2400.jpg 2400w"
+                                src="images/Quatro_orange_rkddje_c_scale,w_2400.jpg"
+                                alt="">
+                        </div>
+                        <div class="product-text">Quatro Orange <span>of Nature</span></div>
+                        <button class="carousel-control next col-start-4 col-end-5 m-col-start-8 m-col-end-9 l-col-start-12 l-col-end-13">&#10095;</button>
+                    </div>
+                    <div class="carousel-item">
+                        <button class="carousel-control prev col-span-1">&#10094;</button>
+                        <div class="product-box">
+                            <img
+                                sizes="(max-width: 2400px) 100vw, 2400px"
+                                srcset="
+                                images/Quatro_pineapple_sawpfy_c_scale,w_200.jpg 200w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_515.jpg 515w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_742.jpg 742w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_928.jpg 928w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_1095.jpg 1095w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_1233.jpg 1233w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_1425.jpg 1425w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_1565.jpg 1565w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_1826.jpg 1826w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_1980.jpg 1980w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_2118.jpg 2118w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_2254.jpg 2254w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_2333.jpg 2333w,
+                                images/Quatro_pineapple_sawpfy_c_scale,w_2400.jpg 2400w"
+                                src="images/Quatro_pineapple_sawpfy_c_scale,w_2400.jpg"
+                                alt="">
+                        </div>
+                        <div class="product-text">Quatro Pineapple <span>of Nature</span></div>
+                        <button class="carousel-control next col-start-4 col-end-5 m-col-start-8 m-col-end-9 l-col-start-12 l-col-end-13">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+        
+        <section class="col-auto" id="brand">
+            <div class="grid-con">
+                <h2 class="hidden">Brand Story</h2>
+                <div class="box col-span-full l-col-start-1 l-col-end-7" id="brand-movie">Brand Movie</div>
+                <div class="box col-span-full l-col-start-7 l-col-end-13" id="brand-text">Brand Story - Text and Button</div> 
+            </div>           
+        </section>
+        <section class="grid-con" id="contact-us">
+            <h2 class="hidden">Contact Us</h2>
+            <div class="col-span-full" id="contact-us-text">Contact Us - Text and Button</div>            
+        </section>
+    </main>
+
+    <footer class="col-auto" id="footer">
+        <div class="grid-con">
+            <h2 class="hidden">Footer</h2>
+            <nav class="box col-span-2 m-col-span-3 l-col-span-8" id="bottom-nav">
+                Bottom Nav
+                <h3 class="hidden">Bottom Navigation</h3>
+            </nav>
+            <div class="box col-start-4 col-end-5 m-col-start-11 m-col-end-13 l-col-start-10 l-col-end-13" id="social-link">
+                Social Link
+            </div>
+            <div class="col-span-full" id="copyright">Copyright text</div>
+        </div>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
