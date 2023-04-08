@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>.:: Quatro ::.</title>
+</head>
+<body>
+    <h1 class="hidden">Welcome to New Quatro!</h1>
+    <header class="grid-con" id="main-header">
+        <h2 class="hidden">Top Navigation</h2>
+        <nav class="col-span-1 m-col-span-1 l-col-start-4 l-col-end-10" id="main-nav">
+            <h3 class="hidden">Main Navigation</h3>
+            <button id="button"></button>
+            <div id="burger-con">
+                <ul>
+                    <li><a href="">Products</a></li>
+                    <li><a href="brand-story.html">Brand Story</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-start-2 col-end-4 m-col-start-4 m-col-end-6 l-col-span-3" id="main-logo">
+            <a href="index.html">
+                <img src="images/logo-apple_v1.svg" alt="logo">
+            </a>
+        </div>
+        <div class="col-span-1 m-col-start-8 m-col-end-9 l-col-span-1" id="main-search">
+            <img src="images/search.svg" alt="search">
+        </div>
+        <section class="l-col-start-11 l-col-end-13" id="social">
+            <h3 class="hidden">Social Links</h3>
+            <img src="images/facebook.svg" alt="facebook">
+            <img src="images/instagram.svg" alt="instageam">
+            <img src="images/twitter.svg" alt="twitter">
+        </section>
+    </header>
+
+    <main>
+    <div id="contact-us-page-con">
+        <article class="grid-con">
+            <h2 class="col-span-full" id="contact-us-page-title">Contact Us</h2>
+            <p class="col-span-full" id="contact-us-page-subhead">Quatro care for your story!</p>
+            <p class="col-span-full" id="contact-us-page-body">Welcome to our contact us page! We value your feedback and inquiries, and we are always ready to assist you in any way we can. Whether you have a question about our products or services, need help with an order, or simply want to provide us with feedback, this is the place to do it. Our customer support team is available around the clock to help you with any issues you may encounter. Please don't hesitate to get in touch with us using any of the methods listed below. We look forward to hearing from you!</p>
+        </article>
+
+        <div id="form-con">
+            <form class="grid-con" method="post" target="_parent">
+
+                <label class="col-span-2 m-col-start-2 m-col-end-4 l-col-start-4 l-col-end-6" for="name">Name:</label>
+                <input class="col-span-full m-col-start-4 m-col-end-8 l-col-start-6 l-col-end-10" type="text" id="name" name="user_name">
+
+                <label class="col-span-2 m-col-start-2 m-col-end-4 l-col-start-4 l-col-end-6" for="email">Email:</label>
+                <input class="col-span-full m-col-start-4 m-col-end-8 l-col-start-6 l-col-end-10" type="email" id="email" name="user_email">
+
+                <label class="col-span-2 m-col-start-2 m-col-end-4 l-col-start-4 l-col-end-6" for="phone">Phone:</label>
+                <input class="col-span-full m-col-start-4 m-col-end-8 l-col-start-6 l-col-end-10" type="text" id="phone" name="user_email">
+
+                <label class="col-span-2 m-col-start-2 m-col-end-4 l-col-start-4 l-col-end-6" for="message">Message:</label>
+                <textarea class="col-span-full m-col-start-4 m-col-end-8 l-col-start-6 l-col-end-10" id="message" name="user_message"></textarea>
+
+                <div class="col-start-2 col-end-4 m-col-start-4 m-col-end-6 l-col-start-6 l-col-end-8" id="form-button">
+                    <a href="submission_notice.html">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>       
+
+    </main>
+
+    <footer class="grid-con">
+        <h2 class="hidden">Footer</h2>
+        <nav class="col-span-2 l-col-start-1 l-col-end-10" id="bottom-nav">
+            <h3 class="hidden">Bottom Navigation</h3>
+            <img src="images/logo-apple_v1.svg" alt="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="brand-story.html">Brand Story</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section class="col-start-4 col-end-5 m-col-start-7 m-col-end-9 l-col-start-11 l-col-end-13" id="social-bottom">
+            <h3 class="hidden">Social Links</h3>
+            <img src="images/facebook.svg" alt="facebook">
+            <img src="images/instagram.svg" alt="instageam">
+            <img src="images/twitter.svg" alt="twitter">
+        </section>
+        <p class="col-span-full">Copyright &#64; 2023 <span>Quatro</span></p>
+    </footer>
+
+    <script src="js/main.js"></script> 
+</body>
+</html>
