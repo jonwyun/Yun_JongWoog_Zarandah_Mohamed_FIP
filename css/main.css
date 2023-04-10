@@ -122,7 +122,14 @@ header {
 
 /* 3. Main Hero Image */
 
+#hero-con img {
+    grid-column: 1/-1;
+    justify-self: center;
+}
 
+#hero-main {
+    object-fit: cover;
+}
 
 /* 4. Product */
 
@@ -174,6 +181,14 @@ header {
 .next {
     right: 5%;
     justify-self: right;
+}
+
+.product-box img {
+    transition: all .5s ease-in;
+}
+
+.product-box img:hover {
+    transform: scale(1.15);
 }
 
 .product-text {
