@@ -104,7 +104,7 @@ header {
 
 #main-logo img {
     height: 60px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 #main-search {
@@ -150,7 +150,7 @@ header {
 
 .carousel-item {
     flex: 0 0 100%;
-    max-width: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,7 +158,7 @@ header {
 }
 
 .carousel-control {
-    background: #ffffff;
+    background: #c5c5c5;
     border-radius: 15px;
     border: none;
     font-size: 1.5rem;
@@ -183,12 +183,45 @@ header {
     justify-self: right;
 }
 
+.product-box {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
 .product-box img {
     transition: all .5s ease-in;
 }
 
+.product-box #apple-img, .product-box #lime-img {
+    height: 300px;
+    margin-top: 40px;
+}
+
+.product-box #pineapple-img, .product-box #orange-img {
+    height: 350px;
+}
+
 .product-box img:hover {
     transform: scale(1.15);
+}
+
+@keyframes swing {
+    0% {
+      transform: rotate(0);
+    }
+    33% {
+      transform: rotate(-15deg);
+    }
+    66% {
+      transform: rotate(15deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+.swing:hover {
+    animation: swing 1s ease-in-out forwards;
 }
 
 .product-text {
@@ -315,6 +348,11 @@ iframe {
     margin: 20px 5% 20px 5%;
     text-align: left;
     line-height: 130%
+}
+
+#quatro-story-con img {
+    margin: 30px 5% 30px 5%;
+    width: 90%;
 }
 
 #logo-story-con {
@@ -542,6 +580,15 @@ footer p span {
         display: none;
     }
 
+    .product-box #apple-img, .product-box #lime-img {
+        height: 450px;
+        margin-top: 50px;
+    }
+    
+    .product-box #pineapple-img, .product-box #orange-img {
+        height: 500px;
+    }
+
     .product-text {
         font-size: 2rem;
     }
@@ -566,17 +613,18 @@ footer p span {
         padding-left: 50px;
         padding-right: 50px;
         border-radius: 0 80px 0 80px;
+        margin-top: 10px;
     }
 
     #brand-title {
         grid-column: 1/-1;
     }
 
-    .brand-subtitle {
+    #brand-subtitle {
         grid-column: 1/-1;
     }
 
-    .brand-details {
+    #brand-details {
         grid-column: 1/3;
         grid-row: 3/4;
     }
@@ -610,6 +658,8 @@ footer p span {
 
     #bottom-nav img {
         display: block;
+        width: 50%;
+        margin-bottom: 30px;
     }
 
     #social-bottom {
@@ -724,8 +774,8 @@ footer p span {
     #burger-con ul li a {
         display: inline;
         color: #000000;
-        font-size: 18px;
-        font-weight: bolder;
+        font-size: 20px;
+        font-weight: bold;
         margin-right: 81px;
         transition: all 0.3s ease;
     }
@@ -755,7 +805,20 @@ footer p span {
         width: 30px;
         height: 30px;
         margin-left: 15px;
+    }
 
+    .product-box {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .product-box #apple-img, .product-box #lime-img {
+        height: 500px;
+        margin-top: 50px;
+    }
+    
+    .product-box #pineapple-img, .product-box #orange-img {
+        height: 550px;
     }
 
     .product-text {
@@ -763,7 +826,21 @@ footer p span {
     }
 
     .carousel-control {
-        top: 50%;
+        top: 50%;   
+        background: #c5c5c5;
+        border-radius: 15px;
+        border: none;
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        transition: all 0.5s ease-out;
+        color: #000000;
     }
 
     .sub-text {
@@ -820,13 +897,13 @@ footer p span {
     }
 
     #bottom-nav img {
-        width: 150px;
+        width: 100px;
     }
 
     #bottom-nav ul {
         display: flex;
         margin-left: 60px;
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     #bottom-nav ul li {
@@ -840,7 +917,7 @@ footer p span {
     }
 
     #social-bottom {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     /* Brand Story Page */
@@ -873,7 +950,15 @@ footer p span {
 
 #submission {
     background-color: #707070;
-    height: 400px;
+    height: 800px;
+}
+
+#submission > img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 170px;
+    padding-left: 20px;
 }
 
 #submission h1 {
@@ -882,22 +967,22 @@ footer p span {
     text-align: center;
     color: #fff;
     padding-top: 100px;
-  }
-  
-  #submission p {
+}
+
+#submission p {
     font-size: 20px;
     text-align: center;
     color: #fff;
     margin-top: 20px;
     margin-bottom: 60px;
-  }
-  
-  #submission a img {
+}
+
+#submission a img {
     color: #fff;
     width: 60px;
     height: 60px;
     display: block;
     margin: 0 auto;
-  }
+}
 
 
