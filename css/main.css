@@ -8,7 +8,8 @@
     5. Brand Story
     6. Contact Us
     7. Footer
-    8. Media Query
+    8. Tablet Screen
+    9. Desktop Screen
 
  */
 
@@ -42,7 +43,7 @@ header {
 }
 
 #main-nav button {
-    background: url(../images/hamburger.svg) center no-repeat;
+    background: url(../images/hamburger.svg) no-repeat;
     border: 0;
     width: 25px;
     height: 30px;
@@ -163,6 +164,7 @@ header {
     top: 45%;
     transform: translateY(-50%);
     transition: all 0.5s ease-out;
+    color: #000000;
 }
 
 .prev {
@@ -217,6 +219,7 @@ iframe {
     padding-left: 7%;
     padding-right: 5%;
     border-radius: 0 50px 0 50px;
+    margin-top: 10px;
 }
 
 #brand-title {
@@ -263,6 +266,52 @@ iframe {
     background-color: #ffffff;
     color: #517d59;
     border: solid 1px #517d59;
+}
+
+#quatro-movie {
+    width: 100%;
+    height: 300px;
+}
+
+#quatro-story-con {
+    background-color: #C1CF95;
+    border-radius: 0 70px 0 70px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+#quatro-story-con h2, #logo-story-con h2 {
+    font-size: 1.5rem;
+    font-family: 'Noto Serif', serif;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#quatro-story-con h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+}
+
+#quatro-story-con p, #logo-story-con p {
+    margin: 20px 5% 20px 5%;
+    text-align: left;
+    line-height: 130%
+}
+
+#logo-story-con {
+    background-color: #E2E0E0;
+    border-radius: 70px 0 70px 0;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+#logo-story-con img {
+    display: block;
+    margin: 30px auto;
 }
 
 /* 6. Contact Us */
@@ -339,6 +388,81 @@ iframe {
     border: solid 1px #517d59;
 }
 
+#contact-us-page-con {
+    background-color: #EBD06D;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 70px 70px 0 70px;
+}
+
+#contact-us-page-title {
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#contact-us-page-subhead {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact-us-page-body {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin: 10px 50px 10px 0;
+}
+
+input, textarea {
+    font-weight: bold;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 120px;
+}
+
+#form-button {
+    justify-self: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#form-button a {
+    background-color: #517d59;
+    border: 0;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 10px 2em;
+    font-size: 18px;
+    text-align: center;
+}
+
+#form-button a:hover {
+    background-color: #ffffff;
+    color: #517d59;
+    border: solid 1px #517d59;
+}
+
 /* 7. footer */
 
 footer {
@@ -392,7 +516,7 @@ footer p span {
     font-weight: bolder;
 }
 
-/* 7. Tablet Screen */
+/* 8. Tablet Screen */
 
 @media screen and (min-width: 768px) {
     #brand-movie {
@@ -546,9 +670,15 @@ footer p span {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    /* Contact Us Page */
+
+    label {
+        text-align: right;
+    }
 }
 
-/* 8. Desktop Screen */
+/* 9. Desktop Screen */
 
 @media screen and (min-width: 1200px) {
     
@@ -698,6 +828,8 @@ footer p span {
         margin-top: 40px;
     }
 
+    /* Brand Story Page */
+
     #brand-story-hero-con #quatro-movie {
         height: 700px;
     }   
@@ -714,52 +846,43 @@ footer p span {
         width: 90%;
     }
 
+    /* Contact Us Page */
+
+    #contact-us-page-con {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-/* 9. Brand Story Page */
+/* 10. Submission Notice Page */
 
-#quatro-movie {
-    width: 100%;
-    height: 300px;
+#submission {
+    background-color: #707070;
+    height: 400px;
 }
 
-#quatro-story-con {
-    background-color: #C1CF95;
-    border-radius: 0 70px 0 70px;
-    margin-top: 30px;
-    padding-bottom: 40px;
-}
-
-#quatro-story-con h2, #logo-story-con h2 {
-    font-size: 1.5rem;
-    font-family: 'Noto Serif', serif;
+#submission h1 {
+    font-size: 40px;
     font-weight: bolder;
     text-align: center;
-    margin-top: 30px;
-}
-
-#quatro-story-con h3 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-family: 'Noto Serif', serif;
+    color: #fff;
+    padding-top: 100px;
+  }
+  
+  #submission p {
+    font-size: 20px;
     text-align: center;
-}
-
-#quatro-story-con p, #logo-story-con p {
-    margin: 20px 5% 20px 5%;
-    text-align: left;
-    line-height: 130%
-}
-
-#logo-story-con {
-    background-color: #C1CF95;
-    border-radius: 70px 0 70px 0;
-    margin-top: 10px;
-    padding-bottom: 40px;
-}
-
-#logo-story-con img {
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  
+  #submission a img {
+    color: #fff;
+    width: 60px;
+    height: 60px;
     display: block;
-    margin: 30px auto;
-}
+    margin: 0 auto;
+  }
+
+
